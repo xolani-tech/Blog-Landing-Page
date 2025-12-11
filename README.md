@@ -1,4 +1,4 @@
-# MyBlog Landing Page
+# 📝MyBlog Landing Page
 
 A responsive blog landing page built with HTML, CSS, and a bit of JavaScript. The design includes a hero section, blog posts, categories, an About section, and a contact form with social icons. The page is mobile-friendly and features smooth scrolling navigation.
 
