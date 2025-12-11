@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+    /* NAVBAR */
+    header {
+      max-width: 100%;
+      background: #ffffff;
+      padding: 0px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-sizing: border-box;
+    }
+    .logo {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+
+ }
+
+    nav a {
+    font-family: 'Comic sans Ms', cursive, sans-sarif;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #333;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+/* ABOUT SECTION USING FLEX */
+.about-section {
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.06);
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+.about-img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+  flex-shrink: 0; /* prevents image from shrinking */
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.about-content p {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .about-img {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+  }
+
+  .about-content h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* FOOTER STAYS AT BOTTOM */
+footer {
+  padding: 30px;
+  text-align: center;
+  background: #111;
+  color: #fff;
+  margin-top: auto;
+}
