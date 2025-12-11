@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-L4y0N8VxOjf+0UO3rSgD0mYxJcMKXzj8sZ9y+XWfQY6R+c7ZKkZ2Yyq0B+6qUyX+TscEYV8kU1Z0tJHq2Hs6BA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
 </head>
 
@@ -16,13 +17,13 @@
             <a href="#">Home</a>
             <a href="#">Categories</a>
             <a href="About.html">About</a>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="hero">
         <h2>Your Daily dose of Insights</h2>
-        <p>Fresh articles, tips and kstories to inspire you everyday journey.</p>
+        <p>Fresh articles, tips and stories to inspire you everyday journey.</p>
         <button>Start Reading</button>
     </section>
 
@@ -56,21 +57,66 @@
     </section>
 
     <!-- CATEGORY SECTION -->
-<h2 class="category-title">Categories</h2>
+<h2 class="category-title"  style="font-family: cursive">Categories</h2>
 <section class="categories">
-<div class="category-card" style="background-image: url('https://via.placeholder.com/500x300?text=Healthy+Lifestyle'); background-color: rgba(46,204,113,0.7);">
+<div class="category-card" style="background-image: url('https://th.bing.com/th/id/R.7d4bb11243c62ed9f18a7065d090c5cb?rik=%2bXL%2bU7VMtWl54Q&pid=ImgRaw&r=0'); background-color: rgba(46,204,113,0.7);">
 <h3>Healthy Lifestyle</h3>
 </div>
-<div class="category-card" style="background-image: url('https://via.placeholder.com/500x300?text=News+%26+Weather'); background-color: rgba(52,152,219,0.7);">
+<div class="category-card" style="background-image: url('https://tse3.mm.bing.net/th/id/OIP.rqPvs0XK-9Vcwx-aqWzHyQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3'); background-color: rgba(52,152,219,0.7);">
 <h3>News & Weather</h3>
 </div>
-<div class="category-card" style="background-image: url('https://via.placeholder.com/500x300?text=Technology'); background-color: rgba(0,0,0,0.5);">
+<div class="category-card" style="background-image: url('https://tse2.mm.bing.net/th/id/OIP.jd7HAZKVv-4M7N2GLQqpOQHaFO?rs=1&pid=ImgDetMain&o=7&rm=3'); background-color: rgba(0,0,0,0.5);">
 <h3>Technology</h3>
 </div>
-<div class="category-card" style="background-image: url('https://via.placeholder.com/500x300?text=Travel'); background-color: rgba(0,0,0,0.5);">
+<div class="category-card" style="background-image: url('https://tse3.mm.bing.net/th/id/OIP.j7FvUshhh1EahoTdf6XBpgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3'); background-color: rgba(0,0,0,0.5);">
 <h3>Travel</h3>
 </div>
 </section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    
+    <!-- Left side: contact info and social icons -->
+    <div class="contact-info">
+      <h2 style="font-family: cursive;">Contact Me</h2>
+      <p>If you’d like to get in touch, feel free to reach out!</p>
+      <p><strong>Email:</strong> xolani@example.com</p>
+      <p><strong>Cell:</strong> +27 123 456 7890</p>
+
+      <div class="social-icons">
+  <a href="https://www.linkedin.com/in/xolanisodam/" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://yourportfolio.com" target="_blank" aria-label="Portfolio">
+    <i class="fas fa-globe"></i>
+  </a>
+</div>
+
+    </div>
+
+    <!-- Right side: contact form -->
+    <div class="contact-form-container">
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
 
     <footer>
         <p>© 2025 MyBlog. All rights Reserved</p>

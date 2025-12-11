@@ -1,3 +1,6 @@
+    html {
+        scroll-behavior: smooth;
+    } 
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -33,7 +36,7 @@
         font-family: cursive;
       margin-left: 30px;
       text-decoration: none;
-      font-weight: 500;
+      font-weight:500;
       font-size: large;
       color: #333;
     }
@@ -167,6 +170,109 @@ background-size: cover;
 background-position: center;
 background-blend-mode: multiply;
 } 
+
+.contact-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  /* background: #fff; */
+  border-radius: 14px;
+  /* box-shadow: 0 6px 32px rgba(0,0,0,0.06); */
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap; /* stacks on smaller screens */
+}
+
+/* Left side */
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 1.8rem;
+  color: #333;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #2ecc71; /* change to your theme color */
+}
+
+
+/* Right side: form */
+.contact-form-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: black;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #27ae60;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    margin-bottom: 30px;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+  }
+}
+
+
 
     /* FOOTER */
     footer {
