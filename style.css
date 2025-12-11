@@ -87,5 +87,37 @@ header h1 {
 }
 
 .post-card img {
-    
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.post-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.post-content a {
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #111;
+    color: #fff;
+    margin-top: 50px;
 }
